@@ -11,6 +11,7 @@ function List({ applications }) {
           <td>{application.location}</td>
           <td>{application.salary}</td>
           <td>{application.date}</td>
+          <td>{application.link}</td>
         </tr>
       );
     });
@@ -24,6 +25,7 @@ function List({ applications }) {
         <th>Location</th>
         <th>Salary</th>
         <th>Date</th>
+        <th>Link</th>
       </tr>
       {list()}
     </table>
