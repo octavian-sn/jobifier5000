@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import uniqid from 'uniqid';
+
 const getDate = () => {
   let date = new Date();
   let day = date.getDate();
@@ -30,6 +31,15 @@ function Form({ updateApplications }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     updateApplications(data);
+    setData({
+      employer: '',
+      title: '',
+      location: '',
+      salary: '',
+      date: getDate(),
+      link: '',
+      id: uniqid(),
+    });
   };
 
   return (
@@ -65,7 +75,7 @@ function Form({ updateApplications }) {
       <input
         onChange={updateData}
         name="link"
-        type="text"
+        type="url"
         value={data.link}
         placeholder="Link"
       ></input>

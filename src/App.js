@@ -7,11 +7,14 @@ function App() {
     JSON.parse(localStorage.getItem('applications')) || []
   );
 
+  useEffect(() => {
+    localStorage.setItem('applications', JSON.stringify(applications));
+  }, [applications]);
+
   const updateApplications = (newApp) => {
     setApplications((prevApplications) => {
       return [newApp, ...prevApplications];
     });
-    // localStorage.setItem('applications', JSON.stringify(applications));
   };
 
   return (

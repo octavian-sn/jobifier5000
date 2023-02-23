@@ -5,29 +5,33 @@ function List({ applications }) {
     applications.map((application) => {
       return (
         <tr key={application.id}>
-          <td>{applications.indexOf(application)}</td>
+          <td>{applications.indexOf(application) + 1}</td>
           <td>{application.employer}</td>
           <td>{application.title}</td>
           <td>{application.location}</td>
           <td>{application.salary}</td>
           <td>{application.date}</td>
-          <td>{application.link}</td>
+          <td>
+            <a href={application.link}>Link</a>
+          </td>
         </tr>
       );
     });
 
   return (
     <table>
-      <tr>
-        <th></th>
-        <th>Employer</th>
-        <th>Title</th>
-        <th>Location</th>
-        <th>Salary</th>
-        <th>Date</th>
-        <th>Link</th>
-      </tr>
-      {list()}
+      <thead>
+        <tr>
+          <th></th>
+          <th>Employer</th>
+          <th>Title</th>
+          <th>Location</th>
+          <th>Salary</th>
+          <th>Date</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>{list()}</tbody>
     </table>
   );
 }
