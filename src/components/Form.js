@@ -57,7 +57,7 @@ function Form({ updateApplications, toggleLetter }) {
         name="title"
         type="text"
         value={data.title}
-        placeholder="Title"
+        placeholder="Job Title"
       ></input>
       <input
         onChange={updateData}
@@ -78,7 +78,7 @@ function Form({ updateApplications, toggleLetter }) {
         name="link"
         type="url"
         value={data.link}
-        placeholder="Link"
+        placeholder="Job Link"
       ></input>
       <button>Add</button>
     </form>
