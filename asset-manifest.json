@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jobifier5000/static/css/main.219a4698.css",
+    "main.js": "/jobifier5000/static/js/main.3498607a.js",
+    "index.html": "/jobifier5000/index.html",
+    "main.219a4698.css.map": "/jobifier5000/static/css/main.219a4698.css.map",
+    "main.3498607a.js.map": "/jobifier5000/static/js/main.3498607a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.219a4698.css",
+    "static/js/main.3498607a.js"
+  ]
+}
