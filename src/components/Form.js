@@ -9,7 +9,7 @@ const getDate = () => {
   return `${day}-${month}-${year}`;
 };
 
-function Form({ updateApplications }) {
+function Form({ updateApplications, toggleLetter }) {
   const [data, setData] = useState({
     employer: '',
     title: '',
@@ -40,6 +40,7 @@ function Form({ updateApplications }) {
       link: '',
       id: uniqid(),
     });
+    toggleLetter();
   };
 
   return (

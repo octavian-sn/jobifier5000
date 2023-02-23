@@ -12,8 +12,11 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 25px;
+  position: relative;
 }
-
+input {
+  height: 27px;
+}
 td {
   /* min-width: 50px; */
   border: 1px solid gray;
@@ -23,4 +26,19 @@ td {
 .index {
   cursor: pointer;
   width: 25px;
+}
+.modal {
+  border: solid 1px blanchedalmond;
+  top: 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: blanchedalmond;
+}
+button {
+  /* height: 40px; */
+  width: 100px;
 }
