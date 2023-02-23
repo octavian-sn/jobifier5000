@@ -1,8 +1,10 @@
 const CoverLetter = ({ title, employer, close }) => {
   return (
     <div className="modal">
+      <label htmlFor="letter">Cover Letter</label>
       <textarea
-        cols="94"
+        name="letter"
+        cols="70"
         rows="10"
         defaultValue={`Dear Madam/Sir, 
 
@@ -23,8 +25,11 @@ Octavian Nicu Şulic
 Email: octavain.nicu.sulic@gmail.com
 Tel:0757 966 569`}
       ></textarea>
+
+      <label htmlFor="intro">Email Intro</label>
       <textarea
-        cols="94"
+        name="intro"
+        cols="70"
         rows="10"
         defaultValue={`Dear Madam/Sir,
 
