@@ -11,6 +11,12 @@ function App() {
     localStorage.setItem('applications', JSON.stringify(applications));
   }, [applications]);
 
+  const deleteApplication = (id) => {
+    setApplications((prevApplications) =>
+      prevApplications.filter((app) => app.id !== id)
+    );
+  };
+
   const updateApplications = (newApp) => {
     setApplications((prevApplications) => {
       return [newApp, ...prevApplications];
@@ -18,9 +24,9 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="app">
       <Form updateApplications={updateApplications} />
-      <List applications={applications} />
+      <List applications={applications} deleteApplication={deleteApplication} />
     </div>
   );
 }

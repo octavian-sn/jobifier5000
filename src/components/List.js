@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
-function List({ applications }) {
+function List({ applications, deleteApplication }) {
   const list = () =>
     applications.map((application) => {
       return (
         <tr key={application.id}>
-          <td>{applications.indexOf(application) + 1}</td>
+          <td
+            onClick={() => deleteApplication(application.id)}
+            className="index"
+          >
+            {applications.indexOf(application) + 1}
+          </td>
           <td>{application.employer}</td>
           <td>{application.title}</td>
           <td>{application.location}</td>
