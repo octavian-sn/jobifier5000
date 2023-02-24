@@ -8,7 +8,7 @@ const CoverLetter = ({ title, employer, close }) => {
         rows="10"
         defaultValue={`Dear Madam/Sir, 
 
-I am excited to submit my application for the role of ${title} with ${employer}. As a highly motivated and skilled web developer with 5 years of experience in the judicial system and 7 months of project-based experience in web development, I am eager and confident in my abilities to make a valuable contribution to your team. 
+I am excited to submit my application for the role of ${title} with ${employer}. As a highly motivated and skilled web developer with 5 years of experience in the judicial system and 8 months of project-based experience in web development, I am eager and confident in my abilities to make a valuable contribution to your team. 
 
 Throughout my career, I have developed a strong work ethic, reliability, and a dedication to delivering results. I believe that effective communication and cooperation are essential to achieving success, and I work collaboratively with colleagues and stakeholders to ensure that projects meet or exceed expectations. When faced with challenging situations, I rely on my grit and determination to overcome obstacles and deliver high-quality solutions.
 
