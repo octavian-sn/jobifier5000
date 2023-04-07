@@ -29,6 +29,9 @@ button {
   border: 1px solid #939ca3;
   font-size: 14px;
 }
+tr:hover {
+  background-color: white;
+}
 td {
   border: 1px solid #939ca3;
   text-align: center;
